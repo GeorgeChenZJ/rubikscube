@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+    <title>Rubik's Cube</title>
+
+    <link rel="stylesheet" href="rubik.css">
+  </head>
+  <body>
+    <div id="fix_screen_width" style="height: 500px;position:relative;overflow:hidden">
+    <div id="screen_blocker" style="position:absolute;width: 100%;height: 100%;top:0;left:0;z-index:-100"></div>
+    <div class="progress-bar" id="progress_bar">
+      <div class="progress-bar-head"></div>
+    </div>
+    <div class="option-group">
+      <div class="btn-option" id="random_rotate"><span class="btn-option-inner">Rotate Randomly</span></div>
+      <div class="btn-option" id="random_rotate_2"><span class="btn-option-inner">Rotate Incessantly</span></div>
+      <div class="btn-option" id="return_origin"><span class="btn-option-inner">Return Origin</span></div>
+      <div class="btn-option">
+        <div class="btn-option-inner">
+          <input type="checkbox" id="colour_switch" checked='checked' class="checkbox-blocker">
+          <input type="checkbox" id="colour_switch_present" checked='checked'><label for="colour">Colour</label>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <div id="rotate_control_area">
+        <div id="rotate_control_button"></div>
+      </div>
+      <div id="rotate_layer_control"style="">
+        <div class="stall" id="stall_1"></div>
+        <div class="stall" id="stall_2"></div>
+        <div id="rotate_layer_control_button"></div>
+      </div>
+
+      <div class="rotate-box rotate-box-Z" style="transform: rotateZ(0deg)">
+        <div class="rotate-box" id="rotate_Y" style="transform: rotateY(0deg)">
+          <div class="rotate-box" id="rotate_X" style="transform: rotateX(0deg)">
+
+          </div>
+        </div>
+      </div>
+      <div class="rubik rubik-coloured" id="rubiks_cube" style="transform: rotateX(-15.01deg) rotateY(-15.23deg);-webkit-transform: rotateX(-15.01deg) rotateY(-15.23deg);">
+        <div class="temp-class">
+        </div>
+        <div class="temp-class"style="background: #a27777;transform: rotateY(0deg)translateX(100px);-webkit-transform: rotateY(0deg)translateX(100px);">
+        </div>
+        <div class="temp-class"style="background: #6464a6;transform: rotateZ(90deg)translateX(100px);-webkit-transform: rotateZ(90deg)translateX(100px);">
+        </div>
+      </div>
+
+
+    </div>
+    </div>
+    <script type="text/javascript">
+    ;(function(){
+      document.getElementById('fix_screen_width').style.width = document.body.clientWidth
+    })()
+
+    </script>
+    <script src="rubik.js"></script>
+  </body>
+</html>

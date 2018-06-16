@@ -1,0 +1,19 @@
+.rubik{
+  -webkit-transition: no !important;
+  transition: no !important;
+}
+.cubie-faces{
+  outline: unset;
+}
+#rotate_control_button{
+  -webkit-transition: no !important;
+  transition: no !important;
+}
+.stall{
+  -webkit-transition: no !important;
+  transition: no !important;
+}
+#rotate_layer_control_button{
+  -webkit-transition: no !important;
+  transition: no !important;
+}
