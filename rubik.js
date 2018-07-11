@@ -156,9 +156,9 @@
   })
 
   document.getElementById('random_rotate').addEventListener('click', function(){
-    // rotate_cubies(['x','y','z'][Math.floor(Math.random()*3)],
-    // Math.floor(Math.random()*3)+1, Math.floor(Math.random()*2))
-    rotate_cubies(['x','y'][Math.floor(Math.random()*2)],1, 1)
+    rotate_cubies(['x','y','z'][Math.floor(Math.random()*3)],
+    Math.floor(Math.random()*3)+1, Math.floor(Math.random()*2))
+//     rotate_cubies(['x','y'][Math.floor(Math.random()*2)],1, 1)
     return
   })
   document.getElementById('random_rotate_2').addEventListener('click', function(){
